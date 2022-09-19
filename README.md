@@ -14,10 +14,10 @@ The toolkit provides complete automation of the entire feature importance comput
 
 
 ## The main attributes of the toolbox are: 
-(i) automatic training and optimisation of machine learning algorithms.
-(ii) automatic computation of a set of feature importance coefficients from ensemble of optimised machine learning algorithms and feature importance calculation techniques.
-(iii) automatic aggregation of importance coefficients using multiple decision fusion techniques.
-(iv) automatic generation of fuzzy membership functions that show the importance of each feature to the prediction task in terms of `low', `moderate' and `high' importance as well as their levels of uncertainty.
+- automatic training and optimisation of machine learning algorithms.
+- automatic computation of a set of feature importance coefficients from ensemble of optimised machine learning algorithms and feature importance calculation techniques.
+- automatic aggregation of importance coefficients using multiple decision fusion techniques.
+- automatic generation of fuzzy membership functions that show the importance of each feature to the prediction task in terms of `low', `moderate' and `high' importance as well as their levels of uncertainty.
 
 
 ## The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
