@@ -19,7 +19,7 @@ The toolkit provides complete automation of the entire feature importance comput
 - automatic aggregation of importance coefficients using multiple decision fusion techniques.
 - automatic generation of fuzzy membership functions that show the importance of each feature to the prediction task in terms of `low', `moderate' and `high' importance as well as their levels of uncertainty.
 
-![alt text](https://github.com/jimmafeni/EFI-Toolbox/featureimportance.png)
+![alt text](https://github.com/jimmafeni/EFI-Toolbox/blob/main/featureimportance.png)
 
 
 ## The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
