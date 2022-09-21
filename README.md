@@ -21,5 +21,7 @@ The toolkit provides complete automation of the entire feature importance comput
 
 ![alt text](https://github.com/jimmafeni/EFI-Toolbox/blob/main/featureimportance.png)
 
+![alt text](https://github.com/jimmafeni/EFI-Toolbox/blob/main/fefitoolkit.png)
+
 
 ## The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
