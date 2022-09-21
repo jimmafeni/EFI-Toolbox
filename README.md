@@ -25,7 +25,7 @@ The toolkit provides complete automation of the entire feature importance comput
 
 ## Relevant publications
 
-If you use auto-sklearn in scientific publications, we would appreciate citations.
+If you use EFI in scientific publications, we would appreciate citations.
 
 **EFI: A Toolbox for Feature Importance Fusion and Interpretation in Python**
 *Aayush Kumar, Jimiama Mafeni Mase, Divish Rengasamy, Benjamin Rothwell, Mercedes Torres Torres, David A. Winkler, Grazziela P. Figueredo*
@@ -43,18 +43,19 @@ Conference on Machine Learning, Optimization, and Data Science  (2022)
 
 ----------------------------------------
 
-**Auto-Sklearn 2.0: The Next Generation**
-*Matthias Feurer, Katharina Eggensperger, Stefan Falkner, Marius Lindauer and Frank Hutter**
-arXiv:2007.04074 [cs.LG], 2020
+**Feature importance in machine learning models: A fuzzy information fusion approach**
+*Divish Rengasamy,Jimiama M.Mase, Aayush Kumar, Benjamin Rothwell, Mercedes Torres Torres, Morgan R.Alexander, David A.Winkler, Grazziela P.Figueredo**
+Neurocomputing Journal, 2022
 
-[Link](https://arxiv.org/abs/2007.04074) to publication.
+[Link](https://www.sciencedirect.com/science/article/pii/S0925231222011584) to publication.
 ```
-@article{feurer-arxiv20a,
-    title     = {Auto-Sklearn 2.0: Hands-free AutoML via Meta-Learning},
-    author    = {Feurer, Matthias and Eggensperger, Katharina and Falkner, Stefan and Lindauer, Marius and Hutter, Frank},
-    booktitle = {arXiv:2007.04074 [cs.LG]},
-    year      = {2020}
+@article{rengasamy2022feature,
+  title={Feature importance in machine learning models: A fuzzy information fusion approach},
+  author={Rengasamy, Divish and Mase, Jimiama M and Kumar, Aayush and Rothwell, Benjamin and Torres, Mercedes Torres and Alexander, Morgan R and Winkler, David A and Figueredo, Grazziela P},
+  journal={Neurocomputing},
+  year={2022},
+  publisher={Elsevier}
 }
 
 
-### The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
+**The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.**
