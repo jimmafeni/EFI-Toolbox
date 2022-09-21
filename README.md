@@ -27,18 +27,17 @@ The toolkit provides complete automation of the entire feature importance comput
 
 If you use auto-sklearn in scientific publications, we would appreciate citations.
 
-**Efficient and Robust Automated Machine Learning**
-*Matthias Feurer, Aaron Klein, Katharina Eggensperger, Jost Springenberg, Manuel Blum and Frank Hutter*
-Advances in Neural Information Processing Systems 28 (2015)
+**EFI: A Toolbox for Feature Importance Fusion and Interpretation in Python**
+*Aayush Kumar, Jimiama Mafeni Mase, Divish Rengasamy, Benjamin Rothwell, Mercedes Torres Torres, David A. Winkler, Grazziela P. Figueredo*
+Conference on Machine Learning, Optimization, and Data Science  (2022)
 
-[Link](https://papers.neurips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf) to publication.
+[Link](https://arxiv.org/abs/2208.04343) to publication.
 ```
-@inproceedings{feurer-neurips15a,
-    title     = {Efficient and Robust Automated Machine Learning},
-    author    = {Feurer, Matthias and Klein, Aaron and Eggensperger, Katharina and Springenberg, Jost and Blum, Manuel and Hutter, Frank},
-    booktitle = {Advances in Neural Information Processing Systems 28 (2015)},
-    pages     = {2962--2970},
-    year      = {2015}
+@article{kumar2022efi,
+  title={EFI: A Toolbox for Feature Importance Fusion and Interpretation in Python},
+  author={Kumar, Aayush and Mase, Jimiama Mafeni and Rengasamy, Divish and Rothwell, Benjamin and Torres, Mercedes Torres and Winkler, David A and Figueredo, Grazziela P},
+  journal={arXiv preprint arXiv:2208.04343},
+  year={2022}
 }
 ```
 
