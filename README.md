@@ -23,5 +23,39 @@ The toolkit provides complete automation of the entire feature importance comput
 
 ![alt text](https://github.com/jimmafeni/EFI-Toolbox/blob/main/fefitoolkit.PNG)
 
+## Relevant publications
 
-## The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
+If you use auto-sklearn in scientific publications, we would appreciate citations.
+
+**Efficient and Robust Automated Machine Learning**
+*Matthias Feurer, Aaron Klein, Katharina Eggensperger, Jost Springenberg, Manuel Blum and Frank Hutter*
+Advances in Neural Information Processing Systems 28 (2015)
+
+[Link](https://papers.neurips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf) to publication.
+```
+@inproceedings{feurer-neurips15a,
+    title     = {Efficient and Robust Automated Machine Learning},
+    author    = {Feurer, Matthias and Klein, Aaron and Eggensperger, Katharina and Springenberg, Jost and Blum, Manuel and Hutter, Frank},
+    booktitle = {Advances in Neural Information Processing Systems 28 (2015)},
+    pages     = {2962--2970},
+    year      = {2015}
+}
+```
+
+----------------------------------------
+
+**Auto-Sklearn 2.0: The Next Generation**
+*Matthias Feurer, Katharina Eggensperger, Stefan Falkner, Marius Lindauer and Frank Hutter**
+arXiv:2007.04074 [cs.LG], 2020
+
+[Link](https://arxiv.org/abs/2007.04074) to publication.
+```
+@article{feurer-arxiv20a,
+    title     = {Auto-Sklearn 2.0: Hands-free AutoML via Meta-Learning},
+    author    = {Feurer, Matthias and Eggensperger, Katharina and Falkner, Stefan and Lindauer, Marius and Hutter, Frank},
+    booktitle = {arXiv:2007.04074 [cs.LG]},
+    year      = {2020}
+}
+
+
+### The toolkit and its description will be updated as new explainability techniques and machine learning models are implemented.
