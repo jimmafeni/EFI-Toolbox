@@ -32,7 +32,7 @@ def get_labels(x, y):
 
 def data_preprocessing(loc, target, loc_specified='Yes'):
     import numpy as np
-    from sklearn.preprocessing import StandardScaler
+    from sklearn.preprocessing import StandardScaler, MinMaxScaler
     import pandas as pd
     from sklearn.preprocessing import LabelEncoder
     if loc_specified == 'Yes':
@@ -45,7 +45,7 @@ def data_preprocessing(loc, target, loc_specified='Yes'):
         df0_labels = target
     # simple pre-processing
     dft_features = pd.DataFrame(StandardScaler().fit_transform(df0_features), columns=df0_features.columns)
-    dft_labels = pd.DataFrame(LabelEncoder().fit_transform(df0_labels), columns=[target])
+    dft_labels = pd.DataFrame(LabelEncoder().fit_transform(df0_labels), columns=[target.name])
     x = dft_features
     y = dft_labels
     return x, y
