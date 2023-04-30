@@ -27,6 +27,7 @@ The toolkit provides complete automation of the entire feature importance comput
 ## Dependencies
 - pip install dataframe-image
 - pip install scikit-learn
+- pip install tensorflow
 - pip install silence-tensorflow
 
 
