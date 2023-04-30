@@ -23,6 +23,12 @@ The toolkit provides complete automation of the entire feature importance comput
 
 ![alt text](https://github.com/jimmafeni/EFI-Toolbox/blob/main/fefitoolkit.PNG)
 
+
+## Dependencies
+- pip install dataframe-image
+- pip install scikit-learn
+
+
 ## Relevant publications
 
 If you use EFI in scientific publications, we would appreciate citations.
