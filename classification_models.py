@@ -10,7 +10,7 @@ import results_gen_methods as rgm
 
 # ---------------------------------------- Artificial Neural Network Classifier -------------------------------------#
 
-def ann_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
+def ann_clf(x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
     print(
         colored('<-------------------Current Model: "Artificial Neural Network Classifier" running------------------>',
                 'green', attrs=['bold']))
@@ -29,7 +29,7 @@ def ann_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y
     import numpy as np
 
     # Class details
-    dft_class_names = np.unique(label)
+    dft_class_names = np.unique(y_train)
     class_names = dft_class_names.tolist()
     class_names = map(str, class_names)
     class_names = list(class_names)
@@ -42,8 +42,8 @@ def ann_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y
     # Ns = number of samples in training data set.
     # α = an arbitrary scaling factor usually 2-10.
 
-    n_i = feature.shape[1]
-    n_o = len(np.unique(label))
+    n_i = x_train.shape[1]
+    n_o = len(np.unique(y_train))
     #n_s = label.size
     alpha = 2
     #n_h = n_s / (alpha * (n_i + n_o))
@@ -103,7 +103,7 @@ def ann_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y
 
 # ---------------------------------------- Support vector machines Classifier ------------------------------------ #
 
-def svm_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
+def svm_clf(x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
     print(colored('<-----------------------Current Model: "Special Vector Machine Classifier" '
                   'running------------------>', 'green',
                   attrs=['bold']))
@@ -113,7 +113,7 @@ def svm_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y
     import numpy as np
 
     # Class details
-    dft_class_names = np.unique(label)
+    dft_class_names = np.unique(y_train)
     class_names = dft_class_names.tolist()
     class_names = map(str, class_names)
     class_names = list(class_names)
@@ -161,13 +161,13 @@ def svm_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y
 
 # ------------------------------------------Random Forest Classifier ------------------------------------------------ #
 
-def random_forest_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
+def random_forest_clf(x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
     print(colored('<-------------------------Current Model: "Random Forest classifier" '
                   'running-------------------------->', 'green', attrs=['bold']))
     from sklearn.model_selection import cross_val_score
     from sklearn.ensemble import RandomForestClassifier
     import numpy as np
-    dft_class_names = np.unique(label)
+    dft_class_names = np.unique(y_train)
     class_names = dft_class_names.tolist()
     class_names = map(str, class_names)
     class_names = list(class_names)
@@ -210,7 +210,7 @@ def random_forest_clf(feature=None, label=None, x_train=None, x_test=None, y_tra
 
 # -------------------------------------------- LightGBM Classifier ---------------------------------------------------#
 
-def lgbm_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
+def lgbm_clf(x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
     from sklearn.model_selection import cross_val_score
     import numpy as np
     import lightgbm as lgb
@@ -276,7 +276,7 @@ def lgbm_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, 
 
 # ------------------------------------------- Logistic Regressor Classifier ------------------------------------------#
 
-def logistic_regression_clf(feature=None, label=None, x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
+def logistic_regression_clf(x_train=None, x_test=None, y_train=None, y_test=None, cv=None):
     print(colored('<--------------------------Current Model: "Logistic Regressor Classifier" '
                   'running------------------->', 'green', attrs=['bold']))
     from sklearn.model_selection import cross_val_score
@@ -287,7 +287,7 @@ def logistic_regression_clf(feature=None, label=None, x_train=None, x_test=None,
     y_test = y_test.values.ravel()
 
     # Class details
-    dft_class_names = np.unique(label)
+    dft_class_names = np.unique(y_train)
     class_names = dft_class_names.tolist()
     class_names = map(str, class_names)
     class_names = list(class_names)
