@@ -30,25 +30,20 @@ def get_labels(x, y):
     return m
 
 
-def data_preprocessing(loc, target, loc_specified='Yes'):
+def data_preprocessing(x_train, y_train, x_test, y_test):
     import numpy as np
     from sklearn.preprocessing import StandardScaler, MinMaxScaler
     import pandas as pd
     from sklearn.preprocessing import LabelEncoder
-    if loc_specified == 'Yes':
-        data = load_data(loc)
-        df0 = into_dataframe(data)
-        df0_features = get_features(df0, target)
-        df0_labels = get_labels(df0, target)
-    else:
-        df0_features = loc
-        df0_labels = target
     # simple pre-processing
-    dft_features = pd.DataFrame(StandardScaler().fit_transform(df0_features), columns=df0_features.columns)
-    dft_labels = pd.DataFrame(LabelEncoder().fit_transform(df0_labels), columns=[target.name])
-    x = dft_features
-    y = dft_labels
-    return x, y
+    x_transform = StandardScaler()
+    y_transform = LabelEncoder()
+    x_train = pd.DataFrame(x_transform.fit_transform(x_train), columns=x_train.columns)
+    y_train = pd.DataFrame(y_transform.fit_transform(y_train), columns=y_train.columns)
+    x_test = pd.DataFrame(x_transform.transform(x_test), columns=x_test.columns)
+    y_test = pd.DataFrame(y_transform.transform(y_test), columns=y_test.columns)
+
+    return x_train, y_train, x_test, y_test
 
 
 def get_class(loc):
